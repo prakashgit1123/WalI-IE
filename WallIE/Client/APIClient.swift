@@ -26,7 +26,7 @@ protocol APIClientProtocol {
 class APIClient: APIClientProtocol {
     func fetchDailyPicture(onCompletion: @escaping (_ completed: Bool, _ picture: Picture?, _ error: CustomError?) -> Void) {
         if let url = URL(string: "\(ClientConstants.dailyPictureURL.rawValue)?api_key=\(ClientConstants.apiKey.rawValue)") {
-            Alamofire.request(url)
+            AF.request(url)
                 .validate(statusCode: [200,202])
                 .validate(contentType: ["application/json"])
                 .responseData { response in

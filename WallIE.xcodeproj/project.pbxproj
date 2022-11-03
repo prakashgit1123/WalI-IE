@@ -322,7 +322,6 @@
 			);
 			mainGroup = 06EC16A62913B00900870FFD;
 			packageReferences = (
-				06EC16E92913B6BC00870FFD /* XCRemoteSwiftPackageReference "WalI-IE" */,
 			);
 			productRefGroup = 06EC16B02913B00900870FFD /* Products */;
 			projectDirPath = "";
@@ -843,17 +842,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		06EC16E92913B6BC00870FFD /* XCRemoteSwiftPackageReference "WalI-IE" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/prakashgit1123/WalI-IE";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 06EC16A72913B00900870FFD /* Project object */;
 }
