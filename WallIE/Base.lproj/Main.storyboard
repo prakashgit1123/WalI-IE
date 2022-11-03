@@ -17,9 +17,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xgK-fR-RlV">
                                 <rect key="frame" x="0.0" y="251" width="414" height="448"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="wH9-W2-rDx"/>
-                                </constraints>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0iD-pV-pS4">
                                 <rect key="frame" x="188.5" y="456.5" width="37" height="37"/>
@@ -40,35 +37,28 @@
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khC-Qa-w6M">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1Q-Ta-UHI">
-                                                <rect key="frame" x="362" y="30" width="44" height="44"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="5ox-j5-5aW"/>
-                                                    <constraint firstAttribute="width" constant="44" id="oem-Ax-PEX"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
-                                                <state key="normal" title="X">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="closeButtonTappedWithSender:" destination="qEN-2D-jzw" eventType="touchUpInside" id="Nb3-cJ-us1"/>
-                                                </connections>
-                                            </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-K4-c50">
-                                                <rect key="frame" x="8" y="86" width="398" height="766"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-K4-c50">
+                                                <rect key="frame" x="8" y="86" width="398" height="599"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="We are not connected to the internet, Showing you the last image we have." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0K-DD-2zE">
+                                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="OGg-K4-c50" firstAttribute="top" secondItem="a1Q-Ta-UHI" secondAttribute="bottom" constant="12" id="1VH-tw-bW8"/>
-                                            <constraint firstItem="a1Q-Ta-UHI" firstAttribute="top" secondItem="khC-Qa-w6M" secondAttribute="top" constant="30" id="aAu-gb-CUy"/>
-                                            <constraint firstAttribute="trailing" secondItem="a1Q-Ta-UHI" secondAttribute="trailing" constant="8" id="oM0-oD-jFk"/>
+                                            <constraint firstAttribute="bottom" secondItem="L0K-DD-2zE" secondAttribute="bottom" id="Cr5-PB-7fN"/>
+                                            <constraint firstItem="L0K-DD-2zE" firstAttribute="top" secondItem="OGg-K4-c50" secondAttribute="bottom" id="MCh-Ct-PoB"/>
+                                            <constraint firstItem="OGg-K4-c50" firstAttribute="top" secondItem="khC-Qa-w6M" secondAttribute="top" constant="86" id="alc-cG-mcR"/>
+                                            <constraint firstItem="L0K-DD-2zE" firstAttribute="leading" secondItem="khC-Qa-w6M" secondAttribute="leading" id="fI2-wE-BCY"/>
+                                            <constraint firstAttribute="trailing" secondItem="L0K-DD-2zE" secondAttribute="trailing" id="huv-E7-vYX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -78,7 +68,6 @@
                                     <constraint firstItem="SkJ-Ah-a4x" firstAttribute="leading" secondItem="F2k-zn-ph1" secondAttribute="leading" id="4ix-ts-EeQ"/>
                                     <constraint firstItem="OGg-K4-c50" firstAttribute="leading" secondItem="F2k-zn-ph1" secondAttribute="leading" constant="8" id="bLi-bB-Wl7"/>
                                     <constraint firstItem="khC-Qa-w6M" firstAttribute="top" secondItem="SkJ-Ah-a4x" secondAttribute="top" id="eGH-2w-MVo"/>
-                                    <constraint firstAttribute="bottom" secondItem="OGg-K4-c50" secondAttribute="bottom" constant="10" id="fSK-SG-2Vg"/>
                                     <constraint firstItem="khC-Qa-w6M" firstAttribute="trailing" secondItem="SkJ-Ah-a4x" secondAttribute="trailing" id="nEC-oF-iaW"/>
                                     <constraint firstItem="SkJ-Ah-a4x" firstAttribute="top" secondItem="F2k-zn-ph1" secondAttribute="top" id="p14-Sj-nWd"/>
                                     <constraint firstAttribute="trailing" secondItem="OGg-K4-c50" secondAttribute="trailing" constant="8" id="prk-H2-ssI"/>
@@ -109,6 +98,7 @@
                     <navigationItem key="navigationItem" id="kVJ-AT-Ved"/>
                     <connections>
                         <outlet property="activityIndicator" destination="0iD-pV-pS4" id="UeD-B1-tbc"/>
+                        <outlet property="errorLabel" destination="L0K-DD-2zE" id="GNV-Zb-5Om"/>
                         <outlet property="explanationTextView" destination="OGg-K4-c50" id="Fw8-av-Jix"/>
                         <outlet property="fullScreenDetails" destination="khC-Qa-w6M" id="1aA-Kh-1Xm"/>
                         <outlet property="fullScreenImageView" destination="SkJ-Ah-a4x" id="vgA-YG-o6j"/>
