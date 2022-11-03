@@ -1,5 +1,7 @@
 # WalI-IE
 
+This app shows the Astronomy picture of the day everyday. This is accompanied by the title of the page and a short decription about it. The purpose of the application is to let a User can learn new things about the universe everyday.
+
 It has few scenarios which is not implemented yet. 
 
 Few WIP : 
