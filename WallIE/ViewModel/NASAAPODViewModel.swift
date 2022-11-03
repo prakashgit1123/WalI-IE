@@ -7,11 +7,11 @@
 
 import Foundation
 
-class DailyPictureViewModel {
+class NASAAPODViewModel {
     let apiClient: APIClientProtocol!
-    var picture: Picture?
+    var picture: Photo?
     
-    var pictureViewModel: PictureViewModel? {
+    var pictureViewModel: PhotoViewModel? {
         didSet {
             self.updatePicture?()
         }
@@ -34,7 +34,7 @@ class DailyPictureViewModel {
     func fetchPicture() {
         self.loading = true
         
-        apiClient.fetchDailyPicture { [weak self] completed, picture, error in
+        apiClient.fetchNASAAPODPic { [weak self] completed, picture, error in
             self?.loading = false
             
             if completed {
@@ -49,9 +49,9 @@ class DailyPictureViewModel {
         }
     }
     
-    func canonicalFrom(picture: Picture) -> PictureViewModel {
+    func canonicalFrom(picture: Photo) -> PhotoViewModel {
         let explanation = picture.explanation ?? ""
         let mediaType = MediaType(rawValue: picture.media_type) ?? MediaType.image
-        return PictureViewModel(url: picture.url, title: picture.title, explanation: explanation, mediaType: mediaType)
+        return PhotoViewModel(url: picture.url, title: picture.title, explanation: explanation, mediaType: mediaType)
     }
 }

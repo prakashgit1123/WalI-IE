@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Daily Picture View Controller-->
+        <!--View Controller-->
         <scene sceneID="c5F-Cg-t2S">
             <objects>
-                <viewController id="qEN-2D-jzw" customClass="DailyPictureViewController" customModule="WallIE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qEN-2D-jzw" customClass="NASAAPODViewController" customModule="WallIE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tbO-2Y-DGf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,28 +37,31 @@
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khC-Qa-w6M">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-K4-c50">
-                                                <rect key="frame" x="8" y="86" width="398" height="599"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are not connected to the internet, Showing you the last image we have." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0K-DD-2zE">
+                                                <rect key="frame" x="8" y="50" width="398" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="dwP-be-UFe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-K4-c50">
+                                                <rect key="frame" x="8" y="230" width="398" height="632"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="We are not connected to the internet, Showing you the last image we have." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0K-DD-2zE">
-                                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="L0K-DD-2zE" secondAttribute="bottom" id="Cr5-PB-7fN"/>
-                                            <constraint firstItem="L0K-DD-2zE" firstAttribute="top" secondItem="OGg-K4-c50" secondAttribute="bottom" id="MCh-Ct-PoB"/>
-                                            <constraint firstItem="OGg-K4-c50" firstAttribute="top" secondItem="khC-Qa-w6M" secondAttribute="top" constant="86" id="alc-cG-mcR"/>
-                                            <constraint firstItem="L0K-DD-2zE" firstAttribute="leading" secondItem="khC-Qa-w6M" secondAttribute="leading" id="fI2-wE-BCY"/>
-                                            <constraint firstAttribute="trailing" secondItem="L0K-DD-2zE" secondAttribute="trailing" id="huv-E7-vYX"/>
+                                            <constraint firstItem="L0K-DD-2zE" firstAttribute="top" secondItem="khC-Qa-w6M" secondAttribute="top" constant="50" id="Gl4-j8-IXb"/>
+                                            <constraint firstItem="OGg-K4-c50" firstAttribute="top" secondItem="L0K-DD-2zE" secondAttribute="bottom" constant="100" id="HOU-Oz-ELC"/>
+                                            <constraint firstItem="L0K-DD-2zE" firstAttribute="leading" secondItem="khC-Qa-w6M" secondAttribute="leading" constant="8" id="Rfj-Iw-0zT"/>
+                                            <constraint firstAttribute="trailing" secondItem="L0K-DD-2zE" secondAttribute="trailing" constant="8" id="kXr-Ve-EVU"/>
+                                            <constraint firstAttribute="bottom" secondItem="OGg-K4-c50" secondAttribute="bottom" id="kfe-Qr-ue9"/>
                                         </constraints>
                                     </view>
                                 </subviews>

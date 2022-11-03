@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 import Network
 
-class DailyPictureViewController: UIViewController {
+class NASAAPODViewController: UIViewController {
 
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var imageView: UIImageView!
@@ -20,33 +20,41 @@ class DailyPictureViewController: UIViewController {
     @IBOutlet var explanationTextView: UITextView!
     @IBOutlet var errorLabel: UILabel!
     var originalImage: UIImage!
-    let monitor = NWPathMonitor()
-    let queue = DispatchQueue(label: "InternetConnectionMonitor")
     
     
-    lazy var dailyPictureViewModel: DailyPictureViewModel = {
-        return DailyPictureViewModel()
+    lazy var dailyPictureViewModel: NASAAPODViewModel = {
+        return NASAAPODViewModel()
     }()
     
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        monitorNetwork()
+        configureViewModel()
+        configureFullScreen()
+    }
+    
+    
+    func monitorNetwork() {
+        let monitor = NWPathMonitor()
         monitor.pathUpdateHandler = { pathUpdateHandler in
-            performOnMainQueue {
-                if pathUpdateHandler.status == .satisfied {
+            if pathUpdateHandler.status == .satisfied {
+                performOnMainQueue {
                     print("Internet connection is on.")
                     self.errorLabel.isHidden = true
                     self.explanationTextView.isHidden = false
-                } else {
+                }
+            } else {
+                performOnMainQueue {
                     self.explanationTextView.isHidden = true
                     self.errorLabel.isHidden = false
                     print("There's no internet connection.")
                 }
             }
         }
+        let queue = DispatchQueue(label: "InternetConnectionMonitor")
         monitor.start(queue: queue)
-        configureViewModel()
-        configureFullScreen()
+
     }
     
     //MARK: ViewModel Configuration
@@ -125,7 +133,7 @@ class DailyPictureViewController: UIViewController {
     }
     
     func configureFullScreen() {
-        let tapImage = UITapGestureRecognizer(target: self, action: #selector(DailyPictureViewController.imageTapped))
+        let tapImage = UITapGestureRecognizer(target: self, action: #selector(NASAAPODViewController.imageTapped))
         self.imageView.addGestureRecognizer(tapImage)
         
         if self.originalImage != nil {
@@ -134,9 +142,9 @@ class DailyPictureViewController: UIViewController {
         }
         
         let tapFullScreenImage = UITapGestureRecognizer(target: self,
-                                                        action: #selector(DailyPictureViewController.fullScreenImageTapped))
+                                                        action: #selector(NASAAPODViewController.fullScreenImageTapped))
         let tapFullDetails = UITapGestureRecognizer(target: self,
-                                                    action: #selector(DailyPictureViewController.fullScreenImageTapped))
+                                                    action: #selector(NASAAPODViewController.fullScreenImageTapped))
         
         self.fullScreenImageView.addGestureRecognizer(tapFullScreenImage)
         self.fullScreenDetails.addGestureRecognizer(tapFullDetails)
@@ -144,7 +152,7 @@ class DailyPictureViewController: UIViewController {
 }
 
 //MARK: Gesture actions
-extension DailyPictureViewController {
+extension NASAAPODViewController {
     @objc func imageTapped(sender: UITapGestureRecognizer) {
         self.showFullScreenView()
     }
@@ -155,7 +163,7 @@ extension DailyPictureViewController {
 }
 
 //MARK: Full Screen
-extension DailyPictureViewController {
+extension NASAAPODViewController {
     func showFullScreenView() {
         if self.fullScreenImageView.image == nil {
             performOnMainQueue {

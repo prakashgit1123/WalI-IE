@@ -17,10 +17,10 @@
 		06EC16D42913B00B00870FFD /* WallIEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16D32913B00B00870FFD /* WallIEUITests.swift */; };
 		06EC16D62913B00B00870FFD /* WallIEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */; };
 		06EC16E82913B64D00870FFD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16E72913B64D00870FFD /* APIClient.swift */; };
-		06EC16EB2913B7B300870FFD /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EA2913B7B300870FFD /* Picture.swift */; };
-		06EC16ED2913B81A00870FFD /* PictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EC2913B81A00870FFD /* PictureViewModel.swift */; };
-		06EC16EF2913B8D600870FFD /* DailyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */; };
-		06EC16F12913B97300870FFD /* DailyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */; };
+		06EC16EB2913B7B300870FFD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EA2913B7B300870FFD /* Photo.swift */; };
+		06EC16ED2913B81A00870FFD /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EC2913B81A00870FFD /* PhotoViewModel.swift */; };
+		06EC16EF2913B8D600870FFD /* NASAAPODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EE2913B8D600870FFD /* NASAAPODViewController.swift */; };
+		06EC16F12913B97300870FFD /* NASAAPODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F02913B97300870FFD /* NASAAPODViewModel.swift */; };
 		06EC16F32913B9D800870FFD /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F22913B9D800870FFD /* UIHelper.swift */; };
 		06EC16F52913B9E900870FFD /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F42913B9E900870FFD /* UIImageExtension.swift */; };
 		7D1B9346FFBED6178291C35F /* Pods_WallIE_WallIEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986914629776228C7F9E33B5 /* Pods_WallIE_WallIEUITests.framework */; };
@@ -60,10 +60,10 @@
 		06EC16D32913B00B00870FFD /* WallIEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIEUITests.swift; sourceTree = "<group>"; };
 		06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIEUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		06EC16E72913B64D00870FFD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		06EC16EA2913B7B300870FFD /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
-		06EC16EC2913B81A00870FFD /* PictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewModel.swift; sourceTree = "<group>"; };
-		06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewController.swift; sourceTree = "<group>"; };
-		06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewModel.swift; sourceTree = "<group>"; };
+		06EC16EA2913B7B300870FFD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		06EC16EC2913B81A00870FFD /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		06EC16EE2913B8D600870FFD /* NASAAPODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAAPODViewController.swift; sourceTree = "<group>"; };
+		06EC16F02913B97300870FFD /* NASAAPODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAAPODViewModel.swift; sourceTree = "<group>"; };
 		06EC16F22913B9D800870FFD /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		06EC16F42913B9E900870FFD /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		1A40B283767F8985974FFA0E /* Pods_WallIETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallIETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 		06EC16E22913B33C00870FFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				06EC16EA2913B7B300870FFD /* Picture.swift */,
+				06EC16EA2913B7B300870FFD /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 		06EC16E32913B34200870FFD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */,
+				06EC16EE2913B8D600870FFD /* NASAAPODViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,8 +182,8 @@
 		06EC16E42913B34800870FFD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				06EC16EC2913B81A00870FFD /* PictureViewModel.swift */,
-				06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */,
+				06EC16EC2913B81A00870FFD /* PhotoViewModel.swift */,
+				06EC16F02913B97300870FFD /* NASAAPODViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -470,15 +470,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EC16B72913B00900870FFD /* ViewController.swift in Sources */,
-				06EC16F12913B97300870FFD /* DailyPictureViewModel.swift in Sources */,
-				06EC16EB2913B7B300870FFD /* Picture.swift in Sources */,
+				06EC16F12913B97300870FFD /* NASAAPODViewModel.swift in Sources */,
+				06EC16EB2913B7B300870FFD /* Photo.swift in Sources */,
 				06EC16F52913B9E900870FFD /* UIImageExtension.swift in Sources */,
-				06EC16EF2913B8D600870FFD /* DailyPictureViewController.swift in Sources */,
+				06EC16EF2913B8D600870FFD /* NASAAPODViewController.swift in Sources */,
 				06EC16B32913B00900870FFD /* AppDelegate.swift in Sources */,
 				06EC16F32913B9D800870FFD /* UIHelper.swift in Sources */,
 				06EC16B52913B00900870FFD /* SceneDelegate.swift in Sources */,
 				06EC16E82913B64D00870FFD /* APIClient.swift in Sources */,
-				06EC16ED2913B81A00870FFD /* PictureViewModel.swift in Sources */,
+				06EC16ED2913B81A00870FFD /* PhotoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,12 +19,12 @@ struct CustomError {
 }
 
 protocol APIClientProtocol {
-    func fetchDailyPicture(onCompletion: @escaping (_ completed: Bool, _ picture: Picture?, _ error: CustomError?) -> Void)
+    func fetchNASAAPODPic(onCompletion: @escaping (_ completed: Bool, _ picture: Photo?, _ error: CustomError?) -> Void)
 }
 
 
 class APIClient: APIClientProtocol {
-    func fetchDailyPicture(onCompletion: @escaping (_ completed: Bool, _ picture: Picture?, _ error: CustomError?) -> Void) {
+    func fetchNASAAPODPic(onCompletion: @escaping (_ completed: Bool, _ picture: Photo?, _ error: CustomError?) -> Void) {
         if let url = URL(string: "\(ClientConstants.dailyPictureURL.rawValue)?api_key=\(ClientConstants.apiKey.rawValue)") {
             AF.request(url)
                 .validate(statusCode: [200,202])
@@ -34,7 +34,7 @@ class APIClient: APIClientProtocol {
                     case .success:
                         if let data = response.value {
                             do {
-                                let picture = try JSONDecoder().decode(Picture.self, from: data)
+                                let picture = try JSONDecoder().decode(Photo.self, from: data)
                                 onCompletion(true, picture, nil)
                             } catch (let e) {
                                 let e = self.handleError(error: e)

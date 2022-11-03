@@ -9,7 +9,7 @@ import Foundation
 
 enum MediaType: String { case image = "image", video = "video" }
 
-struct PictureViewModel {
+struct PhotoViewModel {
     var url: String
     var title: String
     var explanation: String?
