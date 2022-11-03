@@ -16,6 +16,14 @@
 		06EC16CA2913B00B00870FFD /* WallIETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16C92913B00B00870FFD /* WallIETests.swift */; };
 		06EC16D42913B00B00870FFD /* WallIEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16D32913B00B00870FFD /* WallIEUITests.swift */; };
 		06EC16D62913B00B00870FFD /* WallIEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */; };
+		06EC16E82913B64D00870FFD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16E72913B64D00870FFD /* APIClient.swift */; };
+		06EC16EB2913B7B300870FFD /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EA2913B7B300870FFD /* Picture.swift */; };
+		06EC16ED2913B81A00870FFD /* PictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EC2913B81A00870FFD /* PictureViewModel.swift */; };
+		06EC16EF2913B8D600870FFD /* DailyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */; };
+		06EC16F12913B97300870FFD /* DailyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */; };
+		7D1B9346FFBED6178291C35F /* Pods_WallIE_WallIEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986914629776228C7F9E33B5 /* Pods_WallIE_WallIEUITests.framework */; };
+		962C9371557AC410561E6896 /* Pods_WallIETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A40B283767F8985974FFA0E /* Pods_WallIETests.framework */; };
+		D4226932091A24C41168EA1B /* Pods_WallIE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3AE257C16327ED94634C36 /* Pods_WallIE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,20 @@
 		06EC16CF2913B00B00870FFD /* WallIEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallIEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EC16D32913B00B00870FFD /* WallIEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIEUITests.swift; sourceTree = "<group>"; };
 		06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06EC16E72913B64D00870FFD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		06EC16EA2913B7B300870FFD /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		06EC16EC2913B81A00870FFD /* PictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewModel.swift; sourceTree = "<group>"; };
+		06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewController.swift; sourceTree = "<group>"; };
+		06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewModel.swift; sourceTree = "<group>"; };
+		1A40B283767F8985974FFA0E /* Pods_WallIETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallIETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		269194A3485FC89930F3E0FD /* Pods-WallIE-WallIEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIE-WallIEUITests.debug.xcconfig"; path = "Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D3AE257C16327ED94634C36 /* Pods_WallIE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallIE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9251352DB5975FAAF4674856 /* Pods-WallIE-WallIEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIE-WallIEUITests.release.xcconfig"; path = "Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		986914629776228C7F9E33B5 /* Pods_WallIE_WallIEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallIE_WallIEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C156DB8C75A671D5D8F79C5 /* Pods-WallIETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIETests.debug.xcconfig"; path = "Target Support Files/Pods-WallIETests/Pods-WallIETests.debug.xcconfig"; sourceTree = "<group>"; };
+		B56B5C633642B6E631DDE5F2 /* Pods-WallIETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIETests.release.xcconfig"; path = "Target Support Files/Pods-WallIETests/Pods-WallIETests.release.xcconfig"; sourceTree = "<group>"; };
+		B60D06C7D5039F4134107C0E /* Pods-WallIE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIE.debug.xcconfig"; path = "Target Support Files/Pods-WallIE/Pods-WallIE.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD3540748C4C80DEE60820A /* Pods-WallIE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIE.release.xcconfig"; path = "Target Support Files/Pods-WallIE/Pods-WallIE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4226932091A24C41168EA1B /* Pods_WallIE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962C9371557AC410561E6896 /* Pods_WallIETests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1B9346FFBED6178291C35F /* Pods_WallIE_WallIEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,8 @@
 				06EC16C82913B00B00870FFD /* WallIETests */,
 				06EC16D22913B00B00870FFD /* WallIEUITests */,
 				06EC16B02913B00900870FFD /* Products */,
+				B154BA3EEED4B877A47F0C0E /* Pods */,
+				8714D7C7324F7055C0712CC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +126,11 @@
 		06EC16B12913B00900870FFD /* WallIE */ = {
 			isa = PBXGroup;
 			children = (
+				06EC16E62913B63300870FFD /* Client */,
+				06EC16E52913B34F00870FFD /* Helper */,
+				06EC16E42913B34800870FFD /* ViewModel */,
+				06EC16E32913B34200870FFD /* View */,
+				06EC16E22913B33C00870FFD /* Model */,
 				06EC16B22913B00900870FFD /* AppDelegate.swift */,
 				06EC16B42913B00900870FFD /* SceneDelegate.swift */,
 				06EC16B62913B00900870FFD /* ViewController.swift */,
@@ -127,6 +159,69 @@
 			path = WallIEUITests;
 			sourceTree = "<group>";
 		};
+		06EC16E22913B33C00870FFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16EA2913B7B300870FFD /* Picture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06EC16E32913B34200870FFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06EC16E42913B34800870FFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16EC2913B81A00870FFD /* PictureViewModel.swift */,
+				06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		06EC16E52913B34F00870FFD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		06EC16E62913B63300870FFD /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16E72913B64D00870FFD /* APIClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		8714D7C7324F7055C0712CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D3AE257C16327ED94634C36 /* Pods_WallIE.framework */,
+				986914629776228C7F9E33B5 /* Pods_WallIE_WallIEUITests.framework */,
+				1A40B283767F8985974FFA0E /* Pods_WallIETests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B154BA3EEED4B877A47F0C0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B60D06C7D5039F4134107C0E /* Pods-WallIE.debug.xcconfig */,
+				EAD3540748C4C80DEE60820A /* Pods-WallIE.release.xcconfig */,
+				269194A3485FC89930F3E0FD /* Pods-WallIE-WallIEUITests.debug.xcconfig */,
+				9251352DB5975FAAF4674856 /* Pods-WallIE-WallIEUITests.release.xcconfig */,
+				9C156DB8C75A671D5D8F79C5 /* Pods-WallIETests.debug.xcconfig */,
+				B56B5C633642B6E631DDE5F2 /* Pods-WallIETests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06EC16D92913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIE" */;
 			buildPhases = (
+				0D40D1BA5246827EE4EE5132 /* [CP] Check Pods Manifest.lock */,
 				06EC16AB2913B00900870FFD /* Sources */,
 				06EC16AC2913B00900870FFD /* Frameworks */,
 				06EC16AD2913B00900870FFD /* Resources */,
+				D1562113025F0FB0F95DB34E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06EC16DC2913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIETests" */;
 			buildPhases = (
+				724E4CCB673644D13E2C5500 /* [CP] Check Pods Manifest.lock */,
 				06EC16C12913B00B00870FFD /* Sources */,
 				06EC16C22913B00B00870FFD /* Frameworks */,
 				06EC16C32913B00B00870FFD /* Resources */,
@@ -169,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06EC16DF2913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIEUITests" */;
 			buildPhases = (
+				2ACF21FB3F6D1B90668325FA /* [CP] Check Pods Manifest.lock */,
 				06EC16CB2913B00B00870FFD /* Sources */,
 				06EC16CC2913B00B00870FFD /* Frameworks */,
 				06EC16CD2913B00B00870FFD /* Resources */,
+				22AA34DE205469BC87A0BBD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +315,9 @@
 				Base,
 			);
 			mainGroup = 06EC16A62913B00900870FFD;
+			packageReferences = (
+				06EC16E92913B6BC00870FFD /* XCRemoteSwiftPackageReference "WalI-IE" */,
+			);
 			productRefGroup = 06EC16B02913B00900870FFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,14 +356,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D40D1BA5246827EE4EE5132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WallIE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22AA34DE205469BC87A0BBD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ACF21FB3F6D1B90668325FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WallIE-WallIEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		724E4CCB673644D13E2C5500 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WallIETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1562113025F0FB0F95DB34E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WallIE/Pods-WallIE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WallIE/Pods-WallIE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WallIE/Pods-WallIE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06EC16AB2913B00900870FFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				06EC16B72913B00900870FFD /* ViewController.swift in Sources */,
+				06EC16F12913B97300870FFD /* DailyPictureViewModel.swift in Sources */,
+				06EC16EB2913B7B300870FFD /* Picture.swift in Sources */,
+				06EC16EF2913B8D600870FFD /* DailyPictureViewController.swift in Sources */,
 				06EC16B32913B00900870FFD /* AppDelegate.swift in Sources */,
 				06EC16B52913B00900870FFD /* SceneDelegate.swift in Sources */,
+				06EC16E82913B64D00870FFD /* APIClient.swift in Sources */,
+				06EC16ED2913B81A00870FFD /* PictureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +645,7 @@
 		};
 		06EC16DA2913B00B00870FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60D06C7D5039F4134107C0E /* Pods-WallIE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,6 +673,7 @@
 		};
 		06EC16DB2913B00B00870FFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD3540748C4C80DEE60820A /* Pods-WallIE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +701,7 @@
 		};
 		06EC16DD2913B00B00870FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C156DB8C75A671D5D8F79C5 /* Pods-WallIETests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +726,7 @@
 		};
 		06EC16DE2913B00B00870FFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B56B5C633642B6E631DDE5F2 /* Pods-WallIETests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +751,7 @@
 		};
 		06EC16E02913B00B00870FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269194A3485FC89930F3E0FD /* Pods-WallIE-WallIEUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +774,7 @@
 		};
 		06EC16E12913B00B00870FFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9251352DB5975FAAF4674856 /* Pods-WallIE-WallIEUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +835,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06EC16E92913B6BC00870FFD /* XCRemoteSwiftPackageReference "WalI-IE" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/prakashgit1123/WalI-IE";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 06EC16A72913B00900870FFD /* Project object */;
 }

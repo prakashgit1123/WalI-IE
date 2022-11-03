@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
