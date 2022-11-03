@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06EC16B32913B00900870FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16B22913B00900870FFD /* AppDelegate.swift */; };
+		06EC16B52913B00900870FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16B42913B00900870FFD /* SceneDelegate.swift */; };
+		06EC16B72913B00900870FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16B62913B00900870FFD /* ViewController.swift */; };
+		06EC16BA2913B00900870FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EC16B82913B00900870FFD /* Main.storyboard */; };
+		06EC16BC2913B00B00870FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06EC16BB2913B00B00870FFD /* Assets.xcassets */; };
+		06EC16BF2913B00B00870FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EC16BD2913B00B00870FFD /* LaunchScreen.storyboard */; };
+		06EC16CA2913B00B00870FFD /* WallIETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16C92913B00B00870FFD /* WallIETests.swift */; };
+		06EC16D42913B00B00870FFD /* WallIEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16D32913B00B00870FFD /* WallIEUITests.swift */; };
+		06EC16D62913B00B00870FFD /* WallIEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06EC16C62913B00B00870FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06EC16A72913B00900870FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06EC16AE2913B00900870FFD;
+			remoteInfo = WallIE;
+		};
+		06EC16D02913B00B00870FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06EC16A72913B00900870FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06EC16AE2913B00900870FFD;
+			remoteInfo = WallIE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06EC16AF2913B00900870FFD /* WallIE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallIE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EC16B22913B00900870FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06EC16B42913B00900870FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		06EC16B62913B00900870FFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06EC16B92913B00900870FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06EC16BB2913B00B00870FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06EC16BE2913B00B00870FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06EC16C02913B00B00870FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06EC16C52913B00B00870FFD /* WallIETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallIETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EC16C92913B00B00870FFD /* WallIETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIETests.swift; sourceTree = "<group>"; };
+		06EC16CF2913B00B00870FFD /* WallIEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallIEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EC16D32913B00B00870FFD /* WallIEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIEUITests.swift; sourceTree = "<group>"; };
+		06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallIEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06EC16AC2913B00900870FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EC16C22913B00B00870FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EC16CC2913B00B00870FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06EC16A62913B00900870FFD = {
+			isa = PBXGroup;
+			children = (
+				06EC16B12913B00900870FFD /* WallIE */,
+				06EC16C82913B00B00870FFD /* WallIETests */,
+				06EC16D22913B00B00870FFD /* WallIEUITests */,
+				06EC16B02913B00900870FFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06EC16B02913B00900870FFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16AF2913B00900870FFD /* WallIE.app */,
+				06EC16C52913B00B00870FFD /* WallIETests.xctest */,
+				06EC16CF2913B00B00870FFD /* WallIEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06EC16B12913B00900870FFD /* WallIE */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16B22913B00900870FFD /* AppDelegate.swift */,
+				06EC16B42913B00900870FFD /* SceneDelegate.swift */,
+				06EC16B62913B00900870FFD /* ViewController.swift */,
+				06EC16B82913B00900870FFD /* Main.storyboard */,
+				06EC16BB2913B00B00870FFD /* Assets.xcassets */,
+				06EC16BD2913B00B00870FFD /* LaunchScreen.storyboard */,
+				06EC16C02913B00B00870FFD /* Info.plist */,
+			);
+			path = WallIE;
+			sourceTree = "<group>";
+		};
+		06EC16C82913B00B00870FFD /* WallIETests */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16C92913B00B00870FFD /* WallIETests.swift */,
+			);
+			path = WallIETests;
+			sourceTree = "<group>";
+		};
+		06EC16D22913B00B00870FFD /* WallIEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06EC16D32913B00B00870FFD /* WallIEUITests.swift */,
+				06EC16D52913B00B00870FFD /* WallIEUITestsLaunchTests.swift */,
+			);
+			path = WallIEUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06EC16AE2913B00900870FFD /* WallIE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06EC16D92913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIE" */;
+			buildPhases = (
+				06EC16AB2913B00900870FFD /* Sources */,
+				06EC16AC2913B00900870FFD /* Frameworks */,
+				06EC16AD2913B00900870FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallIE;
+			productName = WallIE;
+			productReference = 06EC16AF2913B00900870FFD /* WallIE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06EC16C42913B00B00870FFD /* WallIETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06EC16DC2913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIETests" */;
+			buildPhases = (
+				06EC16C12913B00B00870FFD /* Sources */,
+				06EC16C22913B00B00870FFD /* Frameworks */,
+				06EC16C32913B00B00870FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06EC16C72913B00B00870FFD /* PBXTargetDependency */,
+			);
+			name = WallIETests;
+			productName = WallIETests;
+			productReference = 06EC16C52913B00B00870FFD /* WallIETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06EC16CE2913B00B00870FFD /* WallIEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06EC16DF2913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIEUITests" */;
+			buildPhases = (
+				06EC16CB2913B00B00870FFD /* Sources */,
+				06EC16CC2913B00B00870FFD /* Frameworks */,
+				06EC16CD2913B00B00870FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06EC16D12913B00B00870FFD /* PBXTargetDependency */,
+			);
+			name = WallIEUITests;
+			productName = WallIEUITests;
+			productReference = 06EC16CF2913B00B00870FFD /* WallIEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06EC16A72913B00900870FFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					06EC16AE2913B00900870FFD = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					06EC16C42913B00B00870FFD = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 06EC16AE2913B00900870FFD;
+					};
+					06EC16CE2913B00B00870FFD = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 06EC16AE2913B00900870FFD;
+					};
+				};
+			};
+			buildConfigurationList = 06EC16AA2913B00900870FFD /* Build configuration list for PBXProject "WallIE" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06EC16A62913B00900870FFD;
+			productRefGroup = 06EC16B02913B00900870FFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06EC16AE2913B00900870FFD /* WallIE */,
+				06EC16C42913B00B00870FFD /* WallIETests */,
+				06EC16CE2913B00B00870FFD /* WallIEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06EC16AD2913B00900870FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EC16BF2913B00B00870FFD /* LaunchScreen.storyboard in Resources */,
+				06EC16BC2913B00B00870FFD /* Assets.xcassets in Resources */,
+				06EC16BA2913B00900870FFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EC16C32913B00B00870FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EC16CD2913B00B00870FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06EC16AB2913B00900870FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EC16B72913B00900870FFD /* ViewController.swift in Sources */,
+				06EC16B32913B00900870FFD /* AppDelegate.swift in Sources */,
+				06EC16B52913B00900870FFD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EC16C12913B00B00870FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EC16CA2913B00B00870FFD /* WallIETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EC16CB2913B00B00870FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EC16D62913B00B00870FFD /* WallIEUITestsLaunchTests.swift in Sources */,
+				06EC16D42913B00B00870FFD /* WallIEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06EC16C72913B00B00870FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06EC16AE2913B00900870FFD /* WallIE */;
+			targetProxy = 06EC16C62913B00B00870FFD /* PBXContainerItemProxy */;
+		};
+		06EC16D12913B00B00870FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06EC16AE2913B00900870FFD /* WallIE */;
+			targetProxy = 06EC16D02913B00B00870FFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06EC16B82913B00900870FFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06EC16B92913B00900870FFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06EC16BD2913B00B00870FFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06EC16BE2913B00B00870FFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06EC16D72913B00B00870FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06EC16D82913B00B00870FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06EC16DA2913B00B00870FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WallIE/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wallIE.WallIE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06EC16DB2913B00B00870FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WallIE/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wallIE.WallIE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06EC16DD2913B00B00870FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wallIE.WallIETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallIE.app/WallIE";
+			};
+			name = Debug;
+		};
+		06EC16DE2913B00B00870FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wallIE.WallIETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallIE.app/WallIE";
+			};
+			name = Release;
+		};
+		06EC16E02913B00B00870FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wallIE.WallIEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallIE;
+			};
+			name = Debug;
+		};
+		06EC16E12913B00B00870FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wallIE.WallIEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallIE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06EC16AA2913B00900870FFD /* Build configuration list for PBXProject "WallIE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EC16D72913B00B00870FFD /* Debug */,
+				06EC16D82913B00B00870FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06EC16D92913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EC16DA2913B00B00870FFD /* Debug */,
+				06EC16DB2913B00B00870FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06EC16DC2913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EC16DD2913B00B00870FFD /* Debug */,
+				06EC16DE2913B00B00870FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06EC16DF2913B00B00870FFD /* Build configuration list for PBXNativeTarget "WallIEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06EC16E02913B00B00870FFD /* Debug */,
+				06EC16E12913B00B00870FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06EC16A72913B00900870FFD /* Project object */;
+}
