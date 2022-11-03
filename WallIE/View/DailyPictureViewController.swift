@@ -7,18 +7,22 @@
 
 import UIKit
 import SDWebImage
+import Network
 
 class DailyPictureViewController: UIViewController {
 
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var fullScreenView: UIView!
-    @IBOutlet weak var fullScreenImageView: UIImageView!
-    @IBOutlet weak var fullScreenDetails: UIView!
-    @IBOutlet weak var explanationTextView: UITextView!
-    
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var fullScreenView: UIView!
+    @IBOutlet var fullScreenImageView: UIImageView!
+    @IBOutlet var fullScreenDetails: UIView!
+    @IBOutlet var explanationTextView: UITextView!
+    @IBOutlet var errorLabel: UILabel!
     var originalImage: UIImage!
+    let monitor = NWPathMonitor()
+    let queue = DispatchQueue(label: "InternetConnectionMonitor")
+    
     
     lazy var dailyPictureViewModel: DailyPictureViewModel = {
         return DailyPictureViewModel()
@@ -27,6 +31,20 @@ class DailyPictureViewController: UIViewController {
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        monitor.pathUpdateHandler = { pathUpdateHandler in
+            performOnMainQueue {
+                if pathUpdateHandler.status == .satisfied {
+                    print("Internet connection is on.")
+                    self.errorLabel.isHidden = true
+                    self.explanationTextView.isHidden = false
+                } else {
+                    self.explanationTextView.isHidden = true
+                    self.errorLabel.isHidden = false
+                    print("There's no internet connection.")
+                }
+            }
+        }
+        monitor.start(queue: queue)
         configureViewModel()
         configureFullScreen()
     }
@@ -124,6 +142,7 @@ class DailyPictureViewController: UIViewController {
         self.fullScreenDetails.addGestureRecognizer(tapFullDetails)
     }
 }
+
 //MARK: Gesture actions
 extension DailyPictureViewController {
     @objc func imageTapped(sender: UITapGestureRecognizer) {
@@ -164,16 +183,6 @@ extension DailyPictureViewController {
         performOnMainQueue {
             UIView.animate(withDuration: 0.35, animations: {
                 self.fullScreenDetails.alpha = alpha
-            })
-        }
-    }
-    
-    @IBAction func closeButtonTapped(sender: UIButton) {
-        performOnMainQueue {
-            UIView.animate(withDuration: 0.35, animations: {
-                self.fullScreenView.alpha = 0.0
-            }, completion: { (completion) in
-                self.fullScreenDetails.alpha = 0.0
             })
         }
     }
