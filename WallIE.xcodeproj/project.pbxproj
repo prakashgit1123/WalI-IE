@@ -21,6 +21,8 @@
 		06EC16ED2913B81A00870FFD /* PictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EC2913B81A00870FFD /* PictureViewModel.swift */; };
 		06EC16EF2913B8D600870FFD /* DailyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */; };
 		06EC16F12913B97300870FFD /* DailyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */; };
+		06EC16F32913B9D800870FFD /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F22913B9D800870FFD /* UIHelper.swift */; };
+		06EC16F52913B9E900870FFD /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC16F42913B9E900870FFD /* UIImageExtension.swift */; };
 		7D1B9346FFBED6178291C35F /* Pods_WallIE_WallIEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986914629776228C7F9E33B5 /* Pods_WallIE_WallIEUITests.framework */; };
 		962C9371557AC410561E6896 /* Pods_WallIETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A40B283767F8985974FFA0E /* Pods_WallIETests.framework */; };
 		D4226932091A24C41168EA1B /* Pods_WallIE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3AE257C16327ED94634C36 /* Pods_WallIE.framework */; };
@@ -62,6 +64,8 @@
 		06EC16EC2913B81A00870FFD /* PictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewModel.swift; sourceTree = "<group>"; };
 		06EC16EE2913B8D600870FFD /* DailyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewController.swift; sourceTree = "<group>"; };
 		06EC16F02913B97300870FFD /* DailyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPictureViewModel.swift; sourceTree = "<group>"; };
+		06EC16F22913B9D800870FFD /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		06EC16F42913B9E900870FFD /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		1A40B283767F8985974FFA0E /* Pods_WallIETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallIETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		269194A3485FC89930F3E0FD /* Pods-WallIE-WallIEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallIE-WallIEUITests.debug.xcconfig"; path = "Target Support Files/Pods-WallIE-WallIEUITests/Pods-WallIE-WallIEUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D3AE257C16327ED94634C36 /* Pods_WallIE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallIE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +191,8 @@
 		06EC16E52913B34F00870FFD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				06EC16F22913B9D800870FFD /* UIHelper.swift */,
+				06EC16F42913B9E900870FFD /* UIImageExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -467,8 +473,10 @@
 				06EC16B72913B00900870FFD /* ViewController.swift in Sources */,
 				06EC16F12913B97300870FFD /* DailyPictureViewModel.swift in Sources */,
 				06EC16EB2913B7B300870FFD /* Picture.swift in Sources */,
+				06EC16F52913B9E900870FFD /* UIImageExtension.swift in Sources */,
 				06EC16EF2913B8D600870FFD /* DailyPictureViewController.swift in Sources */,
 				06EC16B32913B00900870FFD /* AppDelegate.swift in Sources */,
+				06EC16F32913B9D800870FFD /* UIHelper.swift in Sources */,
 				06EC16B52913B00900870FFD /* SceneDelegate.swift in Sources */,
 				06EC16E82913B64D00870FFD /* APIClient.swift in Sources */,
 				06EC16ED2913B81A00870FFD /* PictureViewModel.swift in Sources */,
